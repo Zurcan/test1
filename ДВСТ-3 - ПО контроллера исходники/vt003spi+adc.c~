@@ -102,7 +102,7 @@ eeprom char CalibrationConfigChanged;
 eeprom float calibrationKeep[4];
 eeprom float calibrationBeep[4];
 eeprom int crceep = 0x0000;
-eeprom const int crcstatic = 0xa9fd;
+eeprom const int crcstatic = 0x15e3;
 //eeprom unsigned int serial_address=0x0000;
 //flash const unsigned long *serial @0x00100;
 char rangeIndex;

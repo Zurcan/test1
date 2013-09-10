@@ -249,6 +249,7 @@ signed char fsign(float x);
 unsigned char isqrt(unsigned int x);
 unsigned int lsqrt(unsigned long x);
 float sqrt(float x);
+float ftrunc(float x);
 float floor(float x);
 float ceil(float x);
 float fmod(float x,float y);

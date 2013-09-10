@@ -82,7 +82,7 @@ char rxEnable=0, txEnable=1;
 #define setlevel_0_50 {PORTD.7=1;PORTD.6=1;}
 // USART Receiver buffer
 #define RX_BUFFER_SIZE0 64
-
+#define something 111
 //eeprom unsigned int ADC_PV_calibration_point1_10;
 //eeprom unsigned int buf;
 //eeprom unsigned int ADC_PV_calibration_point2_10;
