@@ -1,0 +1,61 @@
+RAM Allocation
+Variable                                                          Address   Size
+--------------------------------------------------------------------------------
+calibrationK                                                      0200h        4
+calibrationB                                                      0204h        4
+rx_buffer0                                                        0208h       64
+com_data_rx                                                       0248h       25
+dynamic_variables                                                 0261h       12
+com_bytes_rx                                                      026Dh        1
+update_args_flag                                                  026Eh        1
+p_bank_addr                                                       026Fh        1
+rx_wr_index0                                                      0270h        1
+rx_rd_index0                                                      0271h        1
+rx_counter0                                                       0272h        1
+adc_data                                                          0273h        4
+DAC_data                                                          0277h        4
+SPI_tEnd                                                          027Bh        1
+checking_result                                                   027Ch        1
+preambula_bytes                                                   027Dh        1
+preambula_bytes_rec                                               027Eh        1
+bytes_quantity_ans                                                027Fh        1
+command_rx_val                                                    0280h        1
+Command_data                                                      0281h       25
+tx_buffer0                                                        029Ah       64
+tx_rd_index0                                                      02DAh        1
+tx_counter0                                                       02DBh        1
+_seed                                                             02DCh        4
+p                                                                 02E0h        2
+
+EEPROM Allocation
+Variable                                                          Address   Size
+--------------------------------------------------------------------------------
+Parameter_bank                                                    0000h      138
+Parameter_defaults                                                008Ah      138
+ADC_PV_calibration_point1                                         0114h        8
+ADC_PV_calibration_point2                                         011Ch        8
+rangeIndexEep                                                     0124h        1
+CalibrationConfigChanged                                          0125h        1
+calibrationKeep                                                   0126h       16
+calibrationBeep                                                   0136h       16
+crceep                                                            0146h        2
+crcstatic                                                         0148h        2
+
+Register Allocation
+Variable                                                          Register  Size
+--------------------------------------------------------------------------------
+rxEnable                                                          R4           1
+txEnable                                                          R3           1
+calibration_point1                                                R5,R6        2
+calibration_point2                                                R7,R8        2
+rangeIndex                                                        R10          1
+tmp_calibration                                                   R11,R12      2
+crc                                                               R13,R14      2
+dataToSave                                                        R9           1
+rx_buffer_overflow0                                               GPIOR0.0  1bit
+printflag                                                         GPIOR0.1  1bit
+RxTx                                                              GPIOR0.2  1bit
+new_data                                                          GPIOR0.3  1bit
+message_recieved                                                  GPIOR0.4  1bit
+answering                                                         GPIOR0.5  1bit
+burst_mode                                                        GPIOR0.6  1bit
